@@ -28,10 +28,10 @@ fruits.shift();
 console.log('After shift() '+fruits);
 fruits.reverse();
 console.log(fruits);
-var result = '';
+var result = ' ';
 var i = 0;
  while ( i < fruits.length) {
-     result = result + fruits[i];
+     result = result.concat(fruits[i]);
      i++;
  }
  console.log(result);
@@ -39,3 +39,10 @@ var i = 0;
  for (i ; i< fruits.length ; ++i) {
     console.log(fruits[i].toUpperCase());
  }
+ var text = 'La Manzana es Verde';
+ console.log(text.toLowerCase());
+ console.log(text.substring(text.length-4));
+ console.log(text.substring(3,6));
+ var $split = text.split(' ');
+ console.log($split);
+ 
