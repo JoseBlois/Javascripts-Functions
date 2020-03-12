@@ -69,6 +69,32 @@ function convertEverithing ($text){
 x = 'no just fresh ingredients on pan';
 console.log(convert(x));
 console.log(convertEverithing(x));
+//Exercise 7
+function vocalCount(sentence){
+    var counter = 0;
+    for (const i in sentence) {
+        if (sentence[i] == 'a' || sentence[i] == 'A' ){
+            counter++;
+        }
+        else if (sentence[i] == 'e' || sentence[i] == 'E' ){
+                counter++;
+            }
+        else if (sentence[i] == 'i' || sentence[i] == 'I' ){
+                    counter++;
+                }
+        else if (sentence[i] == 'o' || sentence[i] == 'O' ){
+                        counter++;
+                }
+        else { if (sentence[i] == 'u' || sentence[i] == 'U' ){
+                            counter++;
+                }
+            }   
+    }
+    return counter;
+}
+var z = 'maybe you should take a look at the console';
+//If vocalCount works correctly it should show 16.
+console.log(vocalCount(z));
 
 
  
