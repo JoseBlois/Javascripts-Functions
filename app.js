@@ -94,7 +94,11 @@ function vocalCount(sentence){
 }
 var z = 'maybe you should take a look at the console';
 //If vocalCount works correctly it should show 16.
-console.log(vocalCount(z));
+console.log(' \'maybe you should take a look at the console\' has '+vocalCount(z)+' vocals in total');
+//Exercise 8
+// miNumero va a tener valor de 15
+// miArray va a ser igual a ['Un texto',true, 4];
+
 
 
  
