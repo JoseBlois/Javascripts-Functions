@@ -46,7 +46,14 @@ var i = 0;
  var $split = text.split(' ');
  console.log($split);
 // Function Exercises
-function convert ($text){
+// Exercise 5
+ function convert (_text){
+     var rest = _text.substring(1);
+    var word = _text[0].toUpperCase()+rest;
+     return word ;
+ }
+// Exercise 6
+function convertEverithing ($text){
         var $splited = $text.split(' ');
         var word,word2;
         for (const index in $splited) {
@@ -56,10 +63,12 @@ function convert ($text){
             $splited[index] = word[0].toUpperCase()+word2;
             // console.log($splited[index]);
         }
-        console.log($splited);
+        var joined = $splited.join(' ');
+        return joined;
 }
-x = 'I dont know, but its hilarious';
-convert(x);
+x = 'no just fresh ingredients on pan';
+console.log(convert(x));
+console.log(convertEverithing(x));
 
 
  
