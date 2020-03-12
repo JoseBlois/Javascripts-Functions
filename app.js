@@ -45,4 +45,21 @@ var i = 0;
  console.log(text.substring(3,6));
  var $split = text.split(' ');
  console.log($split);
+// Function Exercises
+function convert ($text){
+        var $splited = $text.split(' ');
+        var word,word2;
+        for (const index in $splited) {
+            word =  $splited[index];
+            word2 = word.substring(1);
+            word2 = word2.toLowerCase();
+            $splited[index] = word[0].toUpperCase()+word2;
+            // console.log($splited[index]);
+        }
+        console.log($splited);
+}
+x = 'I dont know, but its hilarious';
+convert(x);
+
+
  
