@@ -73,28 +73,28 @@ console.log(convertEverithing(x));
 function vocalCount(sentence){
     var counter = 0;
     for (const i in sentence) {
-        if (sentence[i] == 'a' || sentence[i] == 'A' ){
+        if (sentence[i] == 'a' || sentence[i] == 'A' || sentence[i] == 'á' || sentence[i] == 'Á' ){
             counter++;
         }
-        else if (sentence[i] == 'e' || sentence[i] == 'E' ){
+        else if (sentence[i] == 'e' || sentence[i] == 'E' || sentence[i] == 'é' || sentence[i] == 'É' ){
                 counter++;
             }
-        else if (sentence[i] == 'i' || sentence[i] == 'I' ){
+        else if (sentence[i] == 'i' || sentence[i] == 'I' || sentence[i] == 'í' || sentence[i] == 'Í' ){
                     counter++;
                 }
-        else if (sentence[i] == 'o' || sentence[i] == 'O' ){
+        else if (sentence[i] == 'o' || sentence[i] == 'O' || sentence[i] == 'ó' || sentence[i] == 'Ó' ){
                         counter++;
                 }
-        else { if (sentence[i] == 'u' || sentence[i] == 'U' ){
+        else { if (sentence[i] == 'u' || sentence[i] == 'U' || sentence[i] == 'ú' || sentence[i] == 'Ú' ){
                             counter++;
                 }
             }   
     }
     return counter;
 }
-var z = 'maybe you should take a look at the console';
+var z = 'Crear  una  función  que  reciba  como  parámetro  un  string';
 //If vocalCount works correctly it should show 16.
-console.log(' \'maybe you should take a look at the console\' has '+vocalCount(z)+' vocals in total');
+console.log('\''+ z +'\' has '+vocalCount(z)+' vocals in total');
 //Exercise 8
 // miNumero va a tener valor de 15
 // miArray va a ser igual a ['Un texto',true, 4];
